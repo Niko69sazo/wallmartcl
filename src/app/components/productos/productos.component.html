@@ -1,0 +1,21 @@
+<form (ngSubmit)="addProducto()">
+
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input  name="nombre" [(ngModel)]="producto.nombre" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position ="floating">Precio </ion-label>
+    <ion-input name="precio" [(ngModel)]="producto.precio"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position ="floating">Imagen </ion-label>
+    <ion-input name="imageUrl" [(ngModel)]="producto.imageUrl"></ion-input>
+  </ion-item>
+
+  
+  <br>
+  <ion-button type="submit" expand="full" color="success">Guardar</ion-button>
+</form>
