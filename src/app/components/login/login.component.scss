@@ -1,0 +1,25 @@
+.login-page {
+    --background: #007bff; /* Fondo azul */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .image-container img {
+    width: 100%;
+    max-width: 300px; /* Ajusta el tamaño de la imagen */
+    margin-bottom: 20px;
+  }
+  
+  .login-form {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
