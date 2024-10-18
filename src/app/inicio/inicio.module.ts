@@ -9,6 +9,7 @@ import { InicioPageRoutingModule } from './inicio-routing.module';
 import { InicioPage } from './inicio.page';
 import { ProductosComponent } from '../components/productos/productos.component';
 
+
 @NgModule({
   imports: [
     CommonModule,

@@ -1,0 +1,26 @@
+<form (ngSubmit)="addVenta()">
+
+  <ion-item>
+    <ion-label position="floating">producto</ion-label>
+    <ion-input  name="producto" [(ngModel)]="venta.producto" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">sucursal</ion-label>
+    <ion-input  name="sucursal" [(ngModel)]="venta.sucursal" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position ="floating">fecha </ion-label>
+    <ion-input type="Date" name="fecha" [(ngModel)]="venta.fecha"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position ="floating">cantidad </ion-label>
+    <ion-input type= "number" name="cantidad" [(ngModel)]="venta.cantidad"></ion-input>
+  </ion-item>
+
+  
+  <br>
+  <ion-button type="submit" expand="full" color="success">Guardar</ion-button>
+</form>

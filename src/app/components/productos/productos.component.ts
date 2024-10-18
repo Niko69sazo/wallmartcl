@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductosService, Producto } from '../../services/productos.service';
+import { AuthService } from '../../services/auth.service';
+import {  Router } from '@angular/router';
 @Component({
   selector: 'app-productos',
   templateUrl: './productos.component.html',
@@ -7,7 +9,12 @@ import { ProductosService, Producto } from '../../services/productos.service';
 })
 export class ProductosComponent  implements OnInit {
   producto:Producto = {nombre:"",precio:0,imageUrl:""}
-  constructor(private productoService:ProductosService) { }
+  constructor(
+    private productoService:ProductosService,
+    private aService:AuthService,
+    private router:Router
+  
+  ) { }
 
   ngOnInit() {}
 
@@ -18,4 +25,10 @@ export class ProductosComponent  implements OnInit {
     }).catch(error=>{alert("Error al agregar el producto "+error)})
   }
 
+  logout(){
+this.aService.logout();
+alert("Sesion Cerrada")
+this.router.navigate(["/home"]);
+
+  }
 }
