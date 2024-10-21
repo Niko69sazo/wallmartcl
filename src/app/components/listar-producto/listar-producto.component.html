@@ -1,0 +1,11 @@
+<ion-list>
+  <ion-item *ngFor="let producto of productos">
+    <ion-card>
+      <img alt="Silhouette of mountains" src={{producto.imageUrl}} />
+      <ion-card-header>
+        <ion-card-title>Nombre : {{producto.nombre}}</ion-card-title>
+        <ion-card-subtitle>Precio : $ {{producto.precio}}</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+  </ion-item>
+</ion-list>
