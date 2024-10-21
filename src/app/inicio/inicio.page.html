@@ -5,7 +5,15 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <app-productos></app-productos>
-  <br><br><br><br>
+  
+  <br>
+  <ion-button expand="full" routerLink="/agregar-producto">Agregar Productos</ion-button>
+  <br>
+  <ion-button expand="full">Reportes</ion-button>
+  <br>
   <ion-button expand="full" routerLink="/list-productos">Ver Productos</ion-button>
+  <br>
+  <ion-button expand="full" >Comparacion de Productos</ion-button>
+  <br>
+  <ion-button expand="full" (click)="logout()" color="danger">Cerrar Sesión</ion-button>
 </ion-content>

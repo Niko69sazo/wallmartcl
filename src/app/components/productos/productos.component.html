@@ -6,18 +6,18 @@
   </ion-item>
 
   <ion-item>
-    <ion-label position ="floating">Precio </ion-label>
+    <ion-label position ="floating">Precio</ion-label>
     <ion-input name="precio" [(ngModel)]="producto.precio"></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-label position ="floating">Imagen </ion-label>
+    <ion-label position ="floating">Imagen</ion-label>
     <ion-input name="imageUrl" [(ngModel)]="producto.imageUrl"></ion-input>
   </ion-item>
 
   
   <br>
-  <ion-button type="submit" expand="full" color="success">Guardar</ion-button>
+  <ion-button type="submit" expand="full" color="success">Agregar</ion-button>
 </form>
-<br><br>
-<ion-button expand="full" (click)="logout()">Logout</ion-button>
+<br>
+<ion-button expand="full" (click)="logout()" color="danger">Cerrar Sesión</ion-button>

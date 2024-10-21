@@ -20,16 +20,16 @@ export class LoginComponent  implements OnInit {
       alert("Iniciando Sesion... ");
       this.router.navigate(["/inicio"]);
     }catch(error){
-      alert("Error al intentar Iniciar Sesion "+error)
+      alert("Error al intentar Iniciar Sesion \n"+error)
     }
   }//Login Terminado
 
   async register(){
     try{
       await this.authService.register(this.email,this.password);
-      alert("Registrado con Exito "+ this.email);
+      alert("Registrado Con Exito \n Bienvenido"+ this.email);
     }catch(error){
-      alert("Error al intentar registrar "+error)
+      alert("Error al intentar registrar \n"+error)
     }
   }//Register Terminado
 
